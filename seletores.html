@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en-pt">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+
+    <style>
+        div {
+            background-color: blue;
+            color: white;
+            border: 1px solid black;
+        }
+
+        div > div {
+            background-color: green;
+            padding-left: 1em;
+            color: white;
+        }
+
+        div > div > div {
+            background-color: red;
+            padding-left: 1em;
+            color: white;
+            border-radius: 10px;
+        }
+
+        div > div ~ div {
+            background-color: yellow;;
+            color: black;
+            border-radius: 10px;
+        }
+
+        div > div ~ div + div {
+            background-color: cyan;
+            color: black;
+        }
+        div + div {
+            background-color: white;
+            color: black;
+        }
+
+        div ~ div + div {
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        blue
+        <div>
+            green
+            <div>
+                red
+            </div>
+        </div>
+        <div>
+            yellow
+        </div>
+        <div>
+            cyan
+        </div>
+    </div>
+    <div>
+        white
+    </div>
+    <div>
+        black
+    </div>
+</body>
+</html>
